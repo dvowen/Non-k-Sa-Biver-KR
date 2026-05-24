@@ -1,8 +1,8 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import {
-  jsStringLiteralPattern,
   replaceJsStringLiterals,
+  countReplaceableJsStringLiterals,
 } from "./translation-utils.mjs";
 
 const TRANSLATION_MEMORY = path.resolve("translate/translation-memory.json");
@@ -16,14 +16,6 @@ async function listChunkFiles(dir) {
     .sort();
 }
 
-function countMatches(input, translations) {
-  let total = 0;
-  for (const row of translations) {
-    total += input.match(jsStringLiteralPattern(row.source))?.length ?? 0;
-  }
-  return total;
-}
-
 async function main() {
   const translations = JSON.parse(await fs.readFile(TRANSLATION_MEMORY, "utf8"));
   const files = await listChunkFiles(CHUNKS_DIR);
@@ -31,7 +23,7 @@ async function main() {
 
   for (const file of files) {
     const input = await fs.readFile(file, "utf8");
-    const count = countMatches(input, translations);
+    const count = countReplaceableJsStringLiterals(input, translations);
     if (count === 0) continue;
 
     const output = replaceJsStringLiterals(input, translations);

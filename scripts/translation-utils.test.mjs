@@ -7,6 +7,7 @@ import {
   jsStringLiteralPattern,
   mergeTranslationRows,
   replaceJsStringLiterals,
+  countReplaceableJsStringLiterals,
 } from "./translation-utils.mjs";
 
 test("parseTranslationTsv reads source and korean columns", () => {
@@ -51,4 +52,15 @@ test("replaceJsStringLiterals replaces exact JS string literals only", () => {
     { source: "タガン", korean: "타간" },
   ]);
   assert.equal(output, 'text:"타간", label:"타간과의 대화", other:"非タガン文字"');
+});
+
+test("countReplaceableJsStringLiterals ignores no-op translations", () => {
+  const input = 'label:"🐞 Debug", text:"タガン"';
+  assert.equal(
+    countReplaceableJsStringLiterals(input, [
+      { source: "🐞 Debug", korean: "🐞 Debug" },
+      { source: "タガン", korean: "타간" },
+    ]),
+    1,
+  );
 });

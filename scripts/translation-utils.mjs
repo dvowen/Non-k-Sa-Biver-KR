@@ -68,7 +68,17 @@ export function mergeTranslationRows(rows) {
 export function replaceJsStringLiterals(input, translations) {
   let output = input;
   for (const row of translations) {
+    if (row.source === row.korean) continue;
     output = output.replace(jsStringLiteralPattern(row.source), `"${toJsEscapedText(row.korean)}"`);
   }
   return output;
+}
+
+export function countReplaceableJsStringLiterals(input, translations) {
+  let total = 0;
+  for (const row of translations) {
+    if (row.source === row.korean) continue;
+    total += input.match(jsStringLiteralPattern(row.source))?.length ?? 0;
+  }
+  return total;
 }
