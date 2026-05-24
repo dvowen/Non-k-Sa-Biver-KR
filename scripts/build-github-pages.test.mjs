@@ -10,9 +10,9 @@ import {
 
 test("rewriteGithubPagesPaths prefixes absolute local app paths with repo base", () => {
   const input = [
-    '<script src="/202604testtes004v6/debug-tools.js"></script>',
+    '<script src="/202604testtes004v6/_next/static/app.js"></script>',
     'const BASE_PATH = "/202604testtes004v6";',
-    'fetch("/202604testtes004v6/debug-items.json")',
+    'location.href = "/202604testtes004v6/save-manager.html"',
   ].join("\n");
 
   assert.equal(
@@ -21,17 +21,24 @@ test("rewriteGithubPagesPaths prefixes absolute local app paths with repo base",
       githubPagesBasePath: "/Non-k-Sa-Biver",
     }),
     [
-      '<script src="/Non-k-Sa-Biver/202604testtes004v6/debug-tools.js"></script>',
+      '<script src="/Non-k-Sa-Biver/202604testtes004v6/_next/static/app.js"></script>',
       'const BASE_PATH = "/Non-k-Sa-Biver/202604testtes004v6";',
-      'fetch("/Non-k-Sa-Biver/202604testtes004v6/debug-items.json")',
+      'location.href = "/Non-k-Sa-Biver/202604testtes004v6/save-manager.html"',
     ].join("\n"),
   );
 });
 
 test("rewriteGithubPagesPaths defaults to the KR repository base path", () => {
   assert.equal(
-    rewriteGithubPagesPaths('fetch("/202604testtes004v6/debug-items.json")'),
-    'fetch("/Non-k-Sa-Biver-KR/202604testtes004v6/debug-items.json")',
+    rewriteGithubPagesPaths('location.href = "/202604testtes004v6/save-manager.html"'),
+    'location.href = "/Non-k-Sa-Biver-KR/202604testtes004v6/save-manager.html"',
+  );
+});
+
+test("rewriteGithubPagesPaths does not rewrite external source URLs", () => {
+  assert.equal(
+    rewriteGithubPagesPaths('href="https://example.com/202604testtes004v6/"'),
+    'href="https://example.com/202604testtes004v6/"',
   );
 });
 

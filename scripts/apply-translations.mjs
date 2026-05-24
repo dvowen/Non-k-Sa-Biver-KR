@@ -5,8 +5,6 @@ import {
   replaceJsStringLiterals,
   countReplaceableJsStringLiterals,
 } from "./translation-utils.mjs";
-import { generateDebugItems } from "./generate-debug-items.mjs";
-import { injectDebugTools } from "./inject-debug-tools.mjs";
 
 const TRANSLATION_MEMORY = path.resolve("translate/translation-memory.json");
 const RAW_CHUNKS_DIR = path.resolve("raw/chunks");
@@ -49,13 +47,8 @@ async function main() {
     console.log(`${path.relative(process.cwd(), file)}: ${count}`);
   }
 
-  const debugItemCount = await generateDebugItems();
-  const injectedDebugTools = await injectDebugTools();
-
   console.log(`Restored ${restored} raw JS chunks.`);
   console.log(`Applied ${total} replacements from ${translations.length} translations.`);
-  console.log(`Generated ${debugItemCount} debug items.`);
-  console.log(injectedDebugTools ? "Injected debug tools script." : "Debug tools script already present.");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
