@@ -42,6 +42,13 @@
     "note": "gift response; name preserved"
   },
   {
+    "source": "プレイヤーのHPが0になった時、身代わりとなってプレイヤーを全回復させる(自動復活不可)。\\n敵から敵へと連鎖する「連鎖雷撃」を放つ。",
+    "korean": "플레이어의 HP가 0이 되었을 때 대신 희생해 플레이어를 완전히 회복시킨다(자동 부활 불가).\\n적에서 적으로 이어지는 \"연쇄 번개\"를 쏜다.",
+    "speaker": "",
+    "context": "monster/description",
+    "note": ""
+  },
+  {
     "source": "だがよ、不思議なもんだな。次は何を言われるのか、どこまで俺を弄ぼうとするのか……それを期待してる自分がいることに気づいちまったんだ。",
     "korean": "그런데 말이다, 이상한 일이야. 다음엔 무슨 말을 들을지, 어디까지 나를 휘두를지…… 그걸 기대하는 내가 있다는 걸 깨닫고 말았다.",
     "speaker": "タガン",
@@ -84,6 +91,13 @@
     "note": "survival record; placeholder preserved"
   },
   {
+    "source": "プレイヤーのHPが0になった時、身代わりとなってプレイヤーを全回復させる(自動復活不可)。\\n普段は回復と衝撃波で主を守る。",
+    "korean": "플레이어의 HP가 0이 되었을 때 대신 희생해 플레이어를 완전히 회복시킨다(자동 부활 불가).\\n평소에는 회복과 충격파로 주인을 지킨다.",
+    "speaker": "",
+    "context": "monster/description",
+    "note": ""
+  },
+  {
     "source": "……ぐ、ぅ……ッ！ ……あ、……はぁ……ッ！！ ……ッは、……今の、は……。\\n……お前、……わざと、やってやがるな……っ",
     "korean": "……그, 윽……! ……아, ……하아……!! ……하, ……방금 건…….\\n……너, ……일부러 그러는 거지……",
     "speaker": "タガン",
@@ -106,7 +120,7 @@
   },
   {
     "source": "……がっはっは！ この俺を誰だと思ってやがる。\\n……まぁ、流石にこの年でこれだけ振り回されると、骨身に沁みるがな……。",
-    "korean": "……가하하하! 나를 누구라고 생각하는 거냐.\\n……뭐, 이 나이에 이만큼 휘둘리면 뼛속까지 오긴 한다만……",
+    "korean": "……하하하! 나를 누구라고 생각하는 거냐.\\n……뭐, 이 나이에 이만큼 휘둘리면 뼈에 사무치긴 하는군……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event after"
@@ -134,21 +148,21 @@
   },
   {
     "source": "……は、がっはっは！ ……バカを言え。\\nそう見えるのは……酒のせいだ、酒が……っ、思いのほか、回ってやがるんだ……",
-    "korean": "……하, 가하하하! ……바보 같은 소리 마라.\\n그렇게 보이는 건…… 술 때문이다, 술이…… 생각보다 확 올라서 말이지……",
+    "korean": "……하, 하하하! ……헛소리 마라.\\n그렇게 보이는 건…… 술 때문이다, 술이…… 생각보다 확 올라서 말이지……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
   },
   {
     "source": "……不思議なもんだ。男の身体なんざ、見飽きるほど見てきたはずなのによ。\\nお前に触られると、どうも調子が狂うな……。",
-    "korean": "……이상한 일이야. 남자 몸 따위는 질릴 만큼 봤을 텐데 말이지.\\n네가 만지면 어째 페이스가 흐트러진단 말이야……",
+    "korean": "……이상한 일이야. 남자 몸 따위는 질릴 만큼 봤을 텐데 말이지.\\n네가 만지면 어째 페이스가 흐트러진단 말이지……",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "adult event after"
   },
   {
     "source": "こうやって誰かにまじまじと見られりゃ、脳より先に身体が勝手に『準備』を始めちまうんだ。相手が男だろうが関係なくな",
-    "korean": "이렇게 누군가가 빤히 쳐다보면 머리보다 몸이 먼저 멋대로 '준비'를 시작해 버린다. 상대가 남자든 뭐든 말이야.",
+    "korean": "이렇게 누군가가 빤히 쳐다보면 머리보다 몸이 먼저 멋대로 '준비'를 시작해 버린다. 상대가 남자든 뭐든 말야.",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult talk"
@@ -169,7 +183,7 @@
   },
   {
     "source": "恥ずかしかったこと…？\\n昔、仕入れと間違えて大量のガラクタを買っちまったことがあってな…\\nありゃ参ったよ。",
-    "korean": "부끄러웠던 일…?\\n예전에 매입인 줄 알고 잡동사니를 잔뜩 사 버린 적이 있었지…\\n그땐 참 난감했어.",
+    "korean": "부끄러웠던 일…?\\n예전에 물건 들여놓는답시고 잡동사니를 잔뜩 사 버린 적이 있었지…\\n그땐 참 난감했어.",
     "speaker": "タガン",
     "context": "scenario",
     "note": "embarrassing story"
@@ -309,14 +323,14 @@
   },
   {
     "source": "スライムの体って、地面の砂や埃を巻き込みやすいからね。\\n放っておくと弾力がなくなっちゃうんだ。",
-    "korean": "슬라임 몸은 땅의 모래나 먼지를 끌어안기 쉬워서 말이야.\\n그대로 두면 탄력이 없어져 버리거든.",
+    "korean": "슬라임 몸에는 땅의 모래나 먼지가 잘 들러붙거든.\\n그대로 두면 탄력이 없어져 버려.",
     "speaker": "ソディオ",
     "context": "breeder_max_event_main",
     "note": "Preserve line break as \\n"
   },
   {
     "source": "さすがにこのままだと俺も落ち着かなくてな…\\n何か、俺にできることがあったら、言ってくれないか？",
-    "korean": "이대로 있자니 나도 영 마음이 놓이질 않아서 말이야…\\n내가 해 줄 수 있는 게 있으면 말해 주지 않겠냐?",
+    "korean": "이대로 있자니 나도 영 마음이 안 놓여서 말야…\\n내가 해 줄 수 있는 게 있으면 말해 주지 않겠나?",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "max affinity start"
@@ -379,7 +393,7 @@
   },
   {
     "source": "おい、しっかりしろ！[wait:0.5]意識はあるか？\\n……あぁ、気絶はしてないみたいだな",
-    "korean": "야, 정신 차려![wait:0.5]의식은 있냐?\\n……그래, 기절한 건 아닌 것 같네.",
+    "korean": "야, 정신 차려![wait:0.5]의식은 있냐?\\n……그래, 기절한 건 아니네.",
     "speaker": "アルバルト",
     "context": "desert clear",
     "note": "토큰/줄바꿈 보존"
@@ -400,7 +414,7 @@
   },
   {
     "source": "…ったく…お前には本当に驚かされることばかりだな…いや、今更、とやかくは言わねぇけどよ…",
-    "korean": "…참나… 너한테는 정말 놀랄 일만 생기는구나… 아니, 이제 와서 이러쿵저러쿵할 생각은 없다만…",
+    "korean": "…참나… 너한테는 정말 놀랄 일만 생기는구나… 아니, 이제 와서 이러쿵저러쿵할 생각은 없어…",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
@@ -435,7 +449,7 @@
   },
   {
     "source": "少し二人きりになりたいって…？\\nまぁ、客もこの時間は来ないし、少しなら構わないぞ？",
-    "korean": "잠깐 둘이 있고 싶다고…?\\n뭐, 이 시간엔 손님도 안 오니 잠깐이면 괜찮다만?",
+    "korean": "잠깐 둘이 있고 싶다고…?\\n뭐, 이 시간엔 손님도 안 오니 잠깐이면 괜찮아.",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "private time"
@@ -449,7 +463,7 @@
   },
   {
     "source": "気が向いたら、またこうして俺を驚かせてみろ。その時は、もう少し高くつくからな？（笑）",
-    "korean": "내키면 또 이렇게 나를 놀라게 해 봐라. 그때는 조금 더 비싸게 받을 테니 말이야. 하하.",
+    "korean": "내키면 또 이렇게 나를 놀라게 해 봐라. 그때는 조금 더 비싸게 받을 테니 말야. 하하.",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "adult event after"
@@ -498,14 +512,14 @@
   },
   {
     "source": "好きなものか…やっぱり金貨の輝きだな。\\nあれは何度見ても飽きないぞ！がっはっは！",
-    "korean": "좋아하는 것이라… 역시 금화의 반짝임이지.\\n그건 아무리 봐도 질리질 않는다! 가하하하!",
+    "korean": "좋아하는 것이라… 역시 금화의 반짝임이지.\\n그건 아무리 봐도 질리질 않는다! 하하하!",
     "speaker": "タガン",
     "context": "scenario",
     "note": "likes"
   },
   {
     "source": "何度も言うようだが、俺は別にこんなの、いくらでも見せる分には抵抗ねぇんだけどよ……",
-    "korean": "몇 번이나 말하지만, 나는 이런 거 얼마든 보여 주는 데 딱히 거리낄 건 없다만……",
+    "korean": "몇 번이나 말하지만, 나는 이런 거 보여 주는 데 딱히 거리낄 건 없어……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "affinity 200"
@@ -526,7 +540,7 @@
   },
   {
     "source": "ただ、俺は男とは初めてだから何していいか分からないぞ？ 俺は何をすればいいんだ？",
-    "korean": "다만, 남자와는 처음이라 뭘 해야 할지 모르겠다. 나는 뭘 하면 되지?",
+    "korean": "남자랑은 처음이라 뭘 해야 할지 모르겠어. 나는 뭘 하면 돼?",
     "speaker": "アルバルト",
     "context": "affinity request",
     "note": "성인 이벤트"
@@ -554,7 +568,7 @@
   },
   {
     "source": "……うん、上の方は綺麗になったかな。\\n……おっと、君、ずいぶん低い姿勢で……。",
-    "korean": "...응, 위쪽은 깨끗해진 것 같네.\\n...어라, 너, 꽤 낮은 자세로....",
+    "korean": "...응, 위쪽은 깨끗해졌네.\\n...어라, 너, 꽤 낮은 자세로....",
     "speaker": "ソディオ",
     "context": "breeder_max_event_main",
     "note": "Preserve line break as \\n"
@@ -589,7 +603,7 @@
   },
   {
     "source": "ブーツや弓の弦に塗るメンテナンス素材。アルバルトへのプレゼントに使えそうだ。",
-    "korean": "부츠나 활시위에 바르는 관리 소재. 알베르트에게 선물할 수 있을 것 같다.",
+    "korean": "부츠나 활시위에 바르는 관리 소재. 알베르트에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -729,28 +743,28 @@
   },
   {
     "source": "俺の身体をまじまじと見て何が楽しいんだか、正直さっぱり理解できねぇが……。",
-    "korean": "내 몸을 빤히 보는 게 뭐가 재미있는지 솔직히 도통 모르겠다만……",
+    "korean": "내 몸을 빤히 보는 게 뭐가 재미있는지 솔직히 도통 모르겠군……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "affinity 200"
   },
   {
     "source": "まぁ、これはお前がなんと言おうと、俺が決めたことだけどな！\\nはっはっは！",
-    "korean": "뭐, 이건 네가 뭐라 하든 내가 정한 일이지만 말이야!\\n하하하!",
+    "korean": "뭐, 이건 네가 뭐라 하든 내가 정한 일이지만 말야!\\n하하하!",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "max affinity route"
   },
   {
     "source": "……念のため聞くけどよ、お前は、その…抱くとか抱かれるとか…【どっち】だ？",
-    "korean": "……혹시 모르니 묻겠다만, 너는 그… 안는 쪽이냐 안기는 쪽이냐… 【어느 쪽】이냐?",
+    "korean": "……혹시 모르니 묻자. 너는 그… 안는 쪽이냐, 안기는 쪽이냐… 【어느 쪽】이냐?",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "adult event"
   },
   {
     "source": "それにしても、騎士団時代、理不尽な上官に『可愛がられた』ことはあったが……",
-    "korean": "그건 그렇고, 기사단 시절에 말도 안 되는 상관한테 '귀여움' 받은 적은 있다만……",
+    "korean": "그건 그렇고, 기사단 시절에 말도 안 되는 상관한테 '귀여움' 받은 적은 있었지……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
@@ -778,7 +792,7 @@
   },
   {
     "source": "魔法を帯びた巨樹の最も硬い中心部。アルバルトへのプレゼントに使えそうだ。",
-    "korean": "마법을 머금은 거목의 가장 단단한 중심부. 알베르트에게 선물할 수 있을 것 같다.",
+    "korean": "마법을 머금은 거목의 가장 단단한 중심부. 알베르트에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -792,21 +806,21 @@
   },
   {
     "source": "そうだ！もしよかったら今からモンスターの入浴のお手伝いしてくれないかな？",
-    "korean": "맞다! 괜찮으면 지금부터 몬스터 목욕시키는 걸 좀 도와줄래?",
+    "korean": "맞다! 시간 있으면 몬스터 목욕 시키는 것 좀 도와줄래?",
     "speaker": "ソディオ",
     "context": "breeder_max_event",
     "note": "Request"
   },
   {
     "source": "魔物の体表を保護するクリームの原料。ソディオへのプレゼントに使えそうだ。",
-    "korean": "마물의 체표를 보호하는 크림의 원료. 소디오에게 선물할 수 있을 것 같다.",
+    "korean": "마물의 체표를 보호하는 크림의 원료. 소디오에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
   },
   {
     "source": "それ以来気を付けるようになったから\\n今となっちゃ、良い思い出なんだが…",
-    "korean": "그 뒤로는 조심하게 됐으니\\n이제 와선 좋은 추억이긴 하다만…",
+    "korean": "그 뒤로는 조심하게 됐으니\\n이제 와선 좋은 추억이지…",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult talk"
@@ -834,7 +848,7 @@
   },
   {
     "source": "君もずいぶんいろんなモンスターと親睦を深めるようになったみたいだね…！",
-    "korean": "너도 꽤 여러 몬스터와 친해지게 된 것 같네...!",
+    "korean": "너도 꽤 여러 몬스터들과 친해진 것 같네...!",
     "speaker": "ソディオ",
     "context": "breeder_max_event",
     "note": "Affinity event opening"
@@ -848,7 +862,7 @@
   },
   {
     "source": "弱った個体の再生を促す奇跡の素材。ソディオへのプレゼントに使えそうだ。",
-    "korean": "약해진 개체의 재생을 돕는 기적의 소재. 소디오에게 선물할 수 있을 것 같다.",
+    "korean": "약해진 개체의 재생을 돕는 기적의 소재. 소디오에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -869,7 +883,7 @@
   },
   {
     "source": "ただ、今日はまだ仕事があるからな、今夜だったらいいぜ！また、後で来な！",
-    "korean": "다만 오늘은 아직 일이 남아 있어서 말이야. 오늘 밤이라면 좋다! 나중에 다시 와라!",
+    "korean": "오늘은 아직 일이 남아 있어. 오늘 밤이면 좋다! 나중에 다시 와라!",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "affinity 400 request"
@@ -918,14 +932,14 @@
   },
   {
     "source": "古代の遺跡から見つかる伝説の金属。タガンへのプレゼントに使えそうだ。",
-    "korean": "고대 유적에서 발견되는 전설의 금속. 타간에게 선물할 수 있을 것 같다.",
+    "korean": "고대 유적에서 발견되는 전설의 금속. 타간에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
   },
   {
     "source": "日常の火床に欠かせない良質な燃料。タガンへのプレゼントに使えそうだ。",
-    "korean": "일상 화덕에 꼭 필요한 양질의 연료. 타간에게 선물할 수 있을 것 같다.",
+    "korean": "일상 화덕에 꼭 필요한 양질의 연료. 타간에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -939,14 +953,14 @@
   },
   {
     "source": "所持している分だけ弓矢やタレットの威力が強化される。（パッシブ効果）",
-    "korean": "소지한 수만큼 화살과 터렛의 위력이 강화된다. (패시브 효과)",
+    "korean": "소지한 수만큼 화살과 쇠뇌의 위력이 강화된다. (패시브 효과)",
     "speaker": "",
     "context": "item/effect",
     "note": ""
   },
   {
     "source": "……。（うん、この圧倒的質量と熱量…身体的異常はないみたいだな…）",
-    "korean": "……(그래, 이 압도적인 질량과 열기… 몸에 이상은 없는 것 같네…)",
+    "korean": "……(그래, 이 압도적인 질량과 열기… 몸에는 이상 없어 보이네…)",
     "speaker": "アルバルト",
     "context": "choice",
     "note": "유적 이벤트 선택지"
@@ -974,7 +988,7 @@
   },
   {
     "source": "ふふ、そんなに真剣に覗き込まれると、この子も少し照れてるみたいだよ",
-    "korean": "후후, 그렇게 진지하게 들여다보면 이 아이도 조금 부끄러운가 봐.",
+    "korean": "후후, 그렇게 진지하게 들여다보면 이 녀석도 조금 부끄러운가 봐.",
     "speaker": "ソディオ",
     "context": "breeder_max_event_main",
     "note": "Light teasing"
@@ -1002,7 +1016,7 @@
   },
   {
     "source": "研磨の仕上げに使う最高級の素材。タガンへのプレゼントに使えそうだ。",
-    "korean": "연마 마무리에 쓰는 최고급 소재. 타간에게 선물할 수 있을 것 같다.",
+    "korean": "연마 마무리에 쓰는 최고급 소재. 타간에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -1030,7 +1044,7 @@
   },
   {
     "source": "幼体の寝床に敷くための素材。ソディオへのプレゼントに使えそうだ。",
-    "korean": "어린 개체의 잠자리에 깔아 줄 소재. 소디오에게 선물할 수 있을 것 같다.",
+    "korean": "어린 개체의 잠자리에 깔아 줄 소재. 소디오에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -1100,7 +1114,7 @@
   },
   {
     "source": "…なんというか、だ。\\nお前には随分と世話になっちまってるな…",
-    "korean": "…뭐랄까, 말이다.\\n너한테는 꽤 신세를 지고 있구나…",
+    "korean": "…뭐랄까.\\n너한테는 꽤 신세를 지고 있구나…",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "max affinity start"
@@ -1156,7 +1170,7 @@
   },
   {
     "source": "非常に軽く強靭な羽。アルバルトへのプレゼントに使えそうだ。",
-    "korean": "매우 가볍고 질긴 깃털. 알베르트에게 선물할 수 있을 것 같다.",
+    "korean": "매우 가볍고 질긴 깃털. 알베르트에게 선물하면 좋아할 것 같다.",
     "speaker": "",
     "context": "item/description",
     "note": ""
@@ -1212,14 +1226,14 @@
   },
   {
     "source": "寄付だの仕入れだの、俺の懐を潤してくれるのはありがてぇが…",
-    "korean": "기부니 매입이니, 내 주머니를 두둑하게 해 주는 건 고맙다만…",
+    "korean": "기부든 물건 구매든, 내 주머니를 두둑하게 해 주는 건 고맙지…",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "affinity 400 night"
   },
   {
     "source": "売却するアイテムを選択してください (買取価格: 50%)",
-    "korean": "판매할 아이템을 선택하세요 (매입가: 50%)",
+    "korean": "팔 아이템을 선택하세요 (판매가: 50%)",
     "speaker": "",
     "context": "UI/shop",
     "note": ""
@@ -1268,7 +1282,7 @@
   },
   {
     "source": "…と思ったけど、君はモンスターの卵を持ってないみたいだね",
-    "korean": "...라고 하려 했는데, 너는 몬스터 알을 가지고 있지 않은 것 같네.",
+    "korean": "...라고 하려 했는데, 너는 몬스터 알이 없는 것 같네.",
     "speaker": "ソディオ",
     "context": "breeder_no_egg",
     "note": "Gentle correction"
@@ -1293,6 +1307,20 @@
     "speaker": "タガン",
     "context": "narration",
     "note": "adult event after"
+  },
+  {
+    "source": "自動でブーメランを投擲する。※所持しているだけで自動発動",
+    "korean": "자동으로 부메랑을 던진다. ※소지하고 있으면 자동 발동",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
+  },
+  {
+    "source": "移動時に足元へ罠を設置する。※所持しているだけで自動発動",
+    "korean": "이동 시 발밑에 함정을 설치한다. ※소지하고 있으면 자동 발동",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
   },
   {
     "source": "熟練狩人の証。移動速度、攻撃力、射程が+10%される。",
@@ -1324,7 +1352,7 @@
   },
   {
     "source": "よーしそれじゃ、今からこの子の汚れを落としてあげよう。",
-    "korean": "좋아, 그럼 이제 이 아이의 더러움을 씻겨 주자.",
+    "korean": "좋아, 그럼 이제 이 녀석을 씻겨 주자.",
     "speaker": "ソディオ",
     "context": "breeder_max_event_main",
     "note": "Instruction"
@@ -1338,7 +1366,7 @@
   },
   {
     "source": "そりゃ、俺はお前の気が済むまで付き合ってやるけどよぉ…",
-    "korean": "뭐, 네 직성이 풀릴 때까지 어울려 주긴 하겠다만…",
+    "korean": "뭐, 네 직성이 풀릴 때까지 어울려 주긴 할 건데…",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
@@ -1363,6 +1391,13 @@
     "speaker": "アルバルト",
     "context": "max event",
     "note": "adult event; token preserved"
+  },
+  {
+    "source": "定期的に自動弓を設置する。※所持しているだけで自動発動",
+    "korean": "주기적으로 자동 쇠뇌를 설치한다. ※소지하고 있으면 자동 발동",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
   },
   {
     "source": "深淵より現れた黒き竜。5方向へ広がる強力な火炎を放つ。",
@@ -1401,7 +1436,7 @@
   },
   {
     "source": "……がっはっは！ 人生、何が起きるか分からねぇもんだ",
-    "korean": "……가하하하! 인생은 무슨 일이 일어날지 모르는 법이군.",
+    "korean": "……하하하! 인생, 무슨 일이 생길지 모르는 법이군.",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
@@ -1450,14 +1485,14 @@
   },
   {
     "source": "まぁ、お前がそれで満足なら俺は別にいいんだけどよぉ",
-    "korean": "뭐, 네가 그걸로 만족한다면 나는 딱히 상관없다만.",
+    "korean": "뭐, 네가 그걸로 만족한다면 나는 딱히 상관없어.",
     "speaker": "タガン",
     "context": "scenario",
     "note": "private time"
   },
   {
     "source": "ま、こんなこと愚痴ったってしょうがないんだけどな！",
-    "korean": "뭐, 이런 걸 푸념해 봐야 소용없지만 말이야!",
+    "korean": "뭐, 이런 걸 푸념해 봐야 소용없지만 말야!",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult talk"
@@ -1468,6 +1503,13 @@
     "speaker": "システム",
     "context": "system",
     "note": "discount reward"
+  },
+  {
+    "source": "矢が3方向に拡散する。※所持しているだけで自動発動",
+    "korean": "화살이 3방향으로 퍼진다. ※소지하고 있으면 자동 발동",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
   },
   {
     "source": "硬い岩の体を持つ。動きは遅いが頑丈で、発掘が得意。",
@@ -1631,6 +1673,13 @@
     "note": "blue orb event; token preserved"
   },
   {
+    "source": "※「いいえ」を選択するとタイトル画面に戻ります",
+    "korean": "※ \"아니요\"를 선택하면 타이틀 화면으로 돌아갑니다",
+    "speaker": "",
+    "context": "UI/age gate",
+    "note": ""
+  },
+  {
     "source": "大丈夫か？最近の獲物は数が異常に多いからな…",
     "korean": "괜찮냐? 요즘 사냥감 수가 이상할 정도로 많으니까…",
     "speaker": "アルバルト",
@@ -1695,7 +1744,7 @@
   },
   {
     "source": "あなたは成人済みかつ高校生ではありませんか？",
-    "korean": "성인이며 고등학생이 아닙니까?",
+    "korean": "만 18세 이상 성인이신가요?",
     "speaker": "",
     "context": "UI/age gate",
     "note": ""
@@ -1744,7 +1793,7 @@
   },
   {
     "source": "がっはっは！ お前、本当に底が知れねぇな！",
-    "korean": "가하하하! 너는 정말 바닥을 알 수 없는 녀석이구나!",
+    "korean": "하하하! 너는 정말 속을 알 수 없는 녀석이구나!",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "adult event"
@@ -1761,6 +1810,13 @@
     "korean": "\"아니요\"를 선택하면 타이틀 화면으로 돌아갑니다",
     "speaker": "",
     "context": "UI/age gate",
+    "note": ""
+  },
+  {
+    "source": "60秒間、受けるダメージを20%軽減する。",
+    "korean": "60초 동안 받는 피해를 20% 줄인다.",
+    "speaker": "",
+    "context": "item/effect",
     "note": ""
   },
   {
@@ -1799,8 +1855,15 @@
     "note": ""
   },
   {
+    "source": "60秒間、コイン獲得量が1.5倍になる。",
+    "korean": "60초 동안 코인 획득량이 1.5배로 증가한다.",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
+  },
+  {
     "source": "移動しながら攻撃できるようになる奥義書。",
-    "korean": "이동하면서 공격할 수 있게 되는 비전서.",
+    "korean": "이동 중 공격이 가능해지는 비전서.",
     "speaker": "",
     "context": "item/effect",
     "note": ""
@@ -1988,6 +2051,13 @@
     "note": "affinity 300"
   },
   {
+    "source": "60秒間、攻撃力が上昇する(+2)。",
+    "korean": "60초 동안 공격력이 증가한다(+2).",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
+  },
+  {
     "source": "お前には俺がついてないとだめだな…",
     "korean": "너한텐 내가 붙어 있어야겠네…",
     "speaker": "アルバルト",
@@ -2070,6 +2140,20 @@
     "speaker": "アルバルト",
     "context": "max event",
     "note": "adult event"
+  },
+  {
+    "source": "深淵の魔力を秘めた、黒く巨大な卵。",
+    "korean": "심연의 마력을 품은 검고 거대한 알.",
+    "speaker": "",
+    "context": "item/egg description",
+    "note": ""
+  },
+  {
+    "source": "サラサラとした砂のような模様の卵。",
+    "korean": "고운 모래 같은 무늬가 있는 알.",
+    "speaker": "",
+    "context": "item/egg description",
+    "note": ""
   },
   {
     "source": "素早い動きが得意だが、打たれ弱い。",
@@ -2156,6 +2240,20 @@
     "note": ""
   },
   {
+    "source": "コイン獲得 1.5倍 (60秒)",
+    "korean": "코인 획득 1.5배 (60초)",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": ""
+  },
+  {
+    "source": "ゴールドスライムの卵 (ペット)",
+    "korean": "골드 슬라임의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
     "source": "（これも貴重なチャンスか…？）",
     "korean": "(이것도 귀한 기회인가…?)",
     "speaker": "アルバルト",
@@ -2230,6 +2328,27 @@
     "korean": "쓰러진 펫을 부활시키는 가지.",
     "speaker": "",
     "context": "item/effect",
+    "note": ""
+  },
+  {
+    "source": "被ダメ軽減 20% (60秒)",
+    "korean": "받는 피해 감소 20% (60초)",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": ""
+  },
+  {
+    "source": "レッドスライムの卵 (ペット)",
+    "korean": "레드 슬라임의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": "アビスドラゴンの卵 (ペット)",
+    "korean": "어비스 드래곤의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
     "note": ""
   },
   {
@@ -2352,6 +2471,13 @@
     "note": ""
   },
   {
+    "source": "ずっしりと重い岩のような卵。",
+    "korean": "묵직한 바위 같은 알.",
+    "speaker": "",
+    "context": "item/egg description",
+    "note": ""
+  },
+  {
     "source": "被ダメ軽減 20% (60秒",
     "korean": "받는 피해 감소 20% (60초",
     "speaker": "",
@@ -2422,6 +2548,13 @@
     "note": "adult event"
   },
   {
+    "source": " 設定 (Options)",
+    "korean": " 설정",
+    "speaker": "",
+    "context": "UI/options",
+    "note": ""
+  },
+  {
     "source": "設定は自動的に保存されます",
     "korean": "설정은 자동으로 저장됩니다",
     "speaker": "",
@@ -2472,9 +2605,16 @@
   },
   {
     "source": "定期的に自動弓を設置する。",
-    "korean": "주기적으로 자동 활을 설치한다.",
+    "korean": "주기적으로 자동 쇠뇌를 설치한다.",
     "speaker": "",
     "context": "item/effect",
+    "note": ""
+  },
+  {
+    "source": "森の精霊が産まれそうな卵。",
+    "korean": "숲의 정령이 태어날 것 같은 알.",
+    "speaker": "",
+    "context": "item/egg description",
     "note": ""
   },
   {
@@ -2482,6 +2622,27 @@
     "korean": "화폐로 사용할 수 있는 금화.",
     "speaker": "",
     "context": "item/description",
+    "note": ""
+  },
+  {
+    "source": "Exp+10 (ペット用)",
+    "korean": "Exp+10 (펫용)",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": ""
+  },
+  {
+    "source": "リーフマンの卵 (ペット)",
+    "korean": "리프맨의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": " エサをあげる (所持: ",
+    "korean": " 먹이 주기 (보유: ",
+    "speaker": "UI/pet",
+    "context": "",
     "note": ""
   },
   {
@@ -2580,6 +2741,55 @@
     "korean": "리프맨의 알 (펫",
     "speaker": "",
     "context": "item/shop partial",
+    "note": ""
+  },
+  {
+    "source": "🚫 ここでは使えません",
+    "korean": "🚫 여기서는 사용할 수 없습니다",
+    "speaker": "",
+    "context": "UI/inventory",
+    "note": ""
+  },
+  {
+    "source": " 売り切れ (購入済み)",
+    "korean": " 품절 (구매 완료)",
+    "speaker": "UI/shop",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": "攻撃力 +2 (60秒)",
+    "korean": "공격력 +2 (60초)",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": ""
+  },
+  {
+    "source": "ドラゴンの卵 (ペット)",
+    "korean": "드래곤의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": "スライムの卵 (ペット)",
+    "korean": "슬라임의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": "ゴーレムの卵 (ペット)",
+    "korean": "골렘의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": "を ${e.count}",
+    "korean": " ${e.count}",
+    "speaker": "",
+    "context": "UI/toast template fragment",
     "note": ""
   },
   {
@@ -2710,7 +2920,7 @@
   },
   {
     "source": "※ 一点物アイテム ※",
-    "korean": "※ 단 하나뿐인 아이템 ※",
+    "korean": "※ 유일 아이템 ※",
     "speaker": "",
     "context": "UI/shop",
     "note": ""
@@ -2744,10 +2954,31 @@
     "note": ""
   },
   {
+    "source": "HPを100回復する。",
+    "korean": "HP를 100 회복한다.",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
+  },
+  {
     "source": "矢が3方向に拡散する。",
     "korean": "화살이 3방향으로 퍼진다.",
     "speaker": "",
     "context": "item/effect",
+    "note": ""
+  },
+  {
+    "source": "熱を帯びた鱗のある卵。",
+    "korean": "열을 띤 비늘이 있는 알.",
+    "speaker": "",
+    "context": "item/egg description",
+    "note": ""
+  },
+  {
+    "source": "ほのかに光る神聖な卵。",
+    "korean": "은은하게 빛나는 신성한 알.",
+    "speaker": "",
+    "context": "item/egg description",
     "note": ""
   },
   {
@@ -2769,6 +3000,20 @@
     "korean": "폴른 엔젤",
     "speaker": "",
     "context": "enemy/name",
+    "note": ""
+  },
+  {
+    "source": "SE (効果音) 音量",
+    "korean": "SE (효과음) 음량",
+    "speaker": "",
+    "context": "UI/options",
+    "note": ""
+  },
+  {
+    "source": "マスター、がんばって！",
+    "korean": "마스터, 힘내!",
+    "speaker": "",
+    "context": "pet/quote",
     "note": ""
   },
   {
@@ -2954,6 +3199,13 @@
     "note": "merchant short line"
   },
   {
+    "source": "HPを50回復する。",
+    "korean": "HP를 50 회복한다.",
+    "speaker": "",
+    "context": "item/effect",
+    "note": ""
+  },
+  {
     "source": "瞬時に街へ帰還する。",
     "korean": "즉시 마을로 귀환한다.",
     "speaker": "",
@@ -2986,6 +3238,34 @@
     "korean": "중장보병 아이언기어",
     "speaker": "",
     "context": "enemy/name",
+    "note": ""
+  },
+  {
+    "source": "💰 金貨+1000",
+    "korean": "💰 금화+1000",
+    "speaker": "",
+    "context": "UI/debug",
+    "note": ""
+  },
+  {
+    "source": "天使の卵 (ペット)",
+    "korean": "천사의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": "砂男の卵 (ペット)",
+    "korean": "샌드맨의 알 (펫)",
+    "speaker": "",
+    "context": "item/shop",
+    "note": ""
+  },
+  {
+    "source": "に${c.name}",
+    "korean": "에게 ${c.name}",
+    "speaker": "",
+    "context": "UI/pet template fragment",
     "note": ""
   },
   {
@@ -3109,7 +3389,7 @@
   },
   {
     "source": "の要素を含みます。",
-    "korean": "요소를 포함합니다.",
+    "korean": " 요소가 포함되어 있습니다.",
     "speaker": "",
     "context": "UI/age gate",
     "note": ""
@@ -3206,6 +3486,13 @@
     "note": ""
   },
   {
+    "source": "ゴールド獲得量UP",
+    "korean": "골드 획득량 UP",
+    "speaker": "",
+    "context": "UI/inventory affinity",
+    "note": ""
+  },
+  {
     "source": "トレント・エルダー",
     "korean": "트렌트 엘더",
     "speaker": "",
@@ -3245,6 +3532,34 @@
     "korean": "푸른 보주가 설마...",
     "speaker": "",
     "context": "event/title",
+    "note": ""
+  },
+  {
+    "source": "🖼️ CG全開放",
+    "korean": "🖼️ CG 전부 해금",
+    "speaker": "",
+    "context": "UI/debug",
+    "note": ""
+  },
+  {
+    "source": "燃やしちゃうぞー！",
+    "korean": "태워 버릴 거야!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "スローニ、ナアレ！",
+    "korean": "느려져라!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "深淵の炎を味わえ！",
+    "korean": "심연의 불꽃을 맛봐라!",
+    "speaker": "",
+    "context": "pet/quote",
     "note": ""
   },
   {
@@ -3423,8 +3738,15 @@
     "note": ""
   },
   {
+    "source": "攻撃力・射程UP",
+    "korean": "공격력/사거리 UP",
+    "speaker": "",
+    "context": "UI/inventory affinity",
+    "note": ""
+  },
+  {
     "source": "自動タレット設置",
-    "korean": "자동 터렛 설치",
+    "korean": "자동 쇠뇌 설치",
     "speaker": "",
     "context": "item/effect short",
     "note": ""
@@ -3511,6 +3833,55 @@
     "korean": "타간과의 시간 4",
     "speaker": "",
     "context": "event/title",
+    "note": ""
+  },
+  {
+    "source": "🎒 全アイテム",
+    "korean": "🎒 전체 아이템",
+    "speaker": "",
+    "context": "UI/debug",
+    "note": ""
+  },
+  {
+    "source": "葉っぱカッター！",
+    "korean": "잎사귀 커터!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "ハックツ、シマス",
+    "korean": "발굴, 한다",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "お守りしますわ。",
+    "korean": "지켜 드릴게요.",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "癒やしの時間を…",
+    "korean": "치유의 시간을…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "砂遊び、シヨウ？",
+    "korean": "모래놀이, 할까?",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "痺れちゃうよ〜！",
+    "korean": "찌릿할걸~!",
+    "speaker": "",
+    "context": "pet/quote",
     "note": ""
   },
   {
@@ -3690,7 +4061,7 @@
   },
   {
     "source": "一点物アイテム",
-    "korean": "단 하나뿐인 아이템",
+    "korean": "유일 아이템",
     "speaker": "",
     "context": "UI/shop",
     "note": ""
@@ -3704,7 +4075,7 @@
   },
   {
     "source": "自動弓タレット",
-    "korean": "자동 활 터렛",
+    "korean": "자동 쇠뇌",
     "speaker": "",
     "context": "item/name",
     "note": ""
@@ -3773,6 +4144,48 @@
     "note": ""
   },
   {
+    "source": " 処理中...",
+    "korean": " 처리 중...",
+    "speaker": "UI/donation",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": "🗑️ 全破棄",
+    "korean": "🗑️ 전부 버리기",
+    "speaker": "",
+    "context": "UI/debug",
+    "note": ""
+  },
+  {
+    "source": "イワ…カタク…",
+    "korean": "바위…단단…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "大丈夫ですか？",
+    "korean": "괜찮으신가요?",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "金ピカでしょ！",
+    "korean": "번쩍번쩍하지!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": " を ${n}",
+    "korean": " ${n}",
+    "speaker": "",
+    "context": "UI/toast template fragment",
+    "note": ""
+  },
+  {
     "source": "狩場について",
     "korean": "사냥터에 대해",
     "speaker": "アルバルト",
@@ -3809,7 +4222,7 @@
   },
   {
     "source": "がっはっは！",
-    "korean": "가하하하!",
+    "korean": "하하하!",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "laugh"
@@ -3865,9 +4278,9 @@
   },
   {
     "source": "このゲームは",
-    "korean": "이 게임은",
-    "speaker": "",
-    "context": "UI/age gate",
+    "korean": "이 게임에는 ",
+    "speaker": "UI/age gate",
+    "context": "",
     "note": ""
   },
   {
@@ -3942,14 +4355,14 @@
   },
   {
     "source": "拡散矢キット",
-    "korean": "확산 화살 키트",
+    "korean": "확산 화살통",
     "speaker": "",
     "context": "item/name",
     "note": ""
   },
   {
     "source": "風の歩法の書",
-    "korean": "바람 걸음의 서",
+    "korean": "바람 걸음 비전서",
     "speaker": "",
     "context": "item/name",
     "note": ""
@@ -4050,6 +4463,69 @@
     "korean": "홀리 레이",
     "speaker": "",
     "context": "enemy/skill",
+    "note": ""
+  },
+  {
+    "source": "BGM 音量",
+    "korean": "BGM 음량",
+    "speaker": "",
+    "context": "UI/options",
+    "note": ""
+  },
+  {
+    "source": "プルプル…！",
+    "korean": "푸르푸르…!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "あっちっち！",
+    "korean": "앗 뜨거!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "自然の力よ！",
+    "korean": "자연의 힘이여!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "燃えちまえ！",
+    "korean": "타 버려!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "やったるぜ！",
+    "korean": "해치워 주마!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "グォォォ…！",
+    "korean": "구오오오…!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "灰に帰れ…！",
+    "korean": "재가 되어라…!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "雷光の如く！",
+    "korean": "번개처럼!",
+    "speaker": "",
+    "context": "pet/quote",
     "note": ""
   },
   {
@@ -4299,14 +4775,14 @@
   },
   {
     "source": "見習いの鎧",
-    "korean": "견습생 갑옷",
+    "korean": "견습용 갑옷",
     "speaker": "",
     "context": "item/name",
     "note": ""
   },
   {
     "source": "鉄の矢じり",
-    "korean": "철 화살촉",
+    "korean": "화살촉 강화",
     "speaker": "",
     "context": "item/gift",
     "note": ""
@@ -4347,8 +4823,92 @@
     "note": ""
   },
   {
+    "source": "勲章数: ",
+    "korean": "훈장 수: ",
+    "speaker": "UI/status",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": " 寄付する",
+    "korean": " 기부하기",
+    "speaker": "UI/donation",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": "ダンジョン",
+    "korean": "던전",
+    "speaker": "",
+    "context": "UI/location tag",
+    "note": ""
+  },
+  {
+    "source": "ボワッ…！",
+    "korean": "화악…!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "プスプス…",
+    "korean": "피식피식…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "シャサッ！",
+    "korean": "샤샥!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "守ります！",
+    "korean": "지킬게요!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "ゴ…ゴゴ…",
+    "korean": "고…고고…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "マカセロ…",
+    "korean": "맡겨라…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "グルルル…",
+    "korean": "그르르르…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "サラサラ…",
+    "korean": "사라사라…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "滅びよ…！",
+    "korean": "멸망하라…!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
     "source": "何もない",
-    "korean": "아무것도 없어",
+    "korean": "아무것도 아니야",
     "speaker": "タガン",
     "context": "choice",
     "note": "max affinity"
@@ -4446,16 +5006,16 @@
   },
   {
     "source": "成人向け",
-    "korean": "성인용",
-    "speaker": "",
-    "context": "UI/age gate",
+    "korean": "성인용 콘텐츠",
+    "speaker": "UI/age gate",
+    "context": "",
     "note": ""
   },
   {
     "source": "ゲイ向け",
-    "korean": "게이 대상",
-    "speaker": "",
-    "context": "UI/age gate",
+    "korean": "BL",
+    "speaker": "UI/age gate",
+    "context": "",
     "note": ""
   },
   {
@@ -4592,6 +5152,69 @@
     "note": ""
   },
   {
+    "source": "お得意様",
+    "korean": "단골손님",
+    "speaker": "",
+    "context": "UI/status",
+    "note": ""
+  },
+  {
+    "source": "所持金:",
+    "korean": "소지금:",
+    "speaker": "UI/donation",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": "差分: ",
+    "korean": "차이: ",
+    "speaker": "UI/gallery",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": "安全地帯",
+    "korean": "안전 지대",
+    "speaker": "",
+    "context": "UI/location tag",
+    "note": ""
+  },
+  {
+    "source": "危険地帯",
+    "korean": "위험 지대",
+    "speaker": "",
+    "context": "UI/location tag",
+    "note": ""
+  },
+  {
+    "source": "プルル！",
+    "korean": "푸루루!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "ギャウ！",
+    "korean": "갸우!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "スァー…",
+    "korean": "스아아…",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "ピカッ！",
+    "korean": "번쩍!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
     "source": "いいよ",
     "korean": "좋아",
     "speaker": "",
@@ -4614,7 +5237,7 @@
   },
   {
     "source": "買取屋",
-    "korean": "매입상",
+    "korean": "만물 수집가",
     "speaker": "",
     "context": "UI/NPC name",
     "note": "spec name"
@@ -4649,9 +5272,9 @@
   },
   {
     "source": "かつ、",
-    "korean": "또한",
-    "speaker": "",
-    "context": "UI/age gate",
+    "korean": "와 ",
+    "speaker": "UI/age gate",
+    "context": "",
     "note": ""
   },
   {
@@ -4774,6 +5397,34 @@
     "note": ""
   },
   {
+    "source": "もっと",
+    "korean": "더 보기",
+    "speaker": "",
+    "context": "UI/button",
+    "note": ""
+  },
+  {
+    "source": "戦闘中",
+    "korean": "전투 중",
+    "speaker": "",
+    "context": "UI/location tag",
+    "note": ""
+  },
+  {
+    "source": "ピッ！",
+    "korean": "삣!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
+    "source": "光よ！",
+    "korean": "빛이여!",
+    "speaker": "",
+    "context": "pet/quote",
+    "note": ""
+  },
+  {
     "source": "親友",
     "korean": "친구",
     "speaker": "",
@@ -4876,6 +5527,34 @@
     "korean": "금화",
     "speaker": "",
     "context": "item/name",
+    "note": ""
+  },
+  {
+    "source": " 枚",
+    "korean": "장",
+    "speaker": "UI/gallery",
+    "context": "",
+    "note": ""
+  },
+  {
+    "source": "屋内",
+    "korean": "실내",
+    "speaker": "",
+    "context": "UI/location tag",
+    "note": ""
+  },
+  {
+    "source": "町",
+    "korean": "마을",
+    "speaker": "",
+    "context": "UI/location tag",
+    "note": ""
+  },
+  {
+    "source": "と",
+    "korean": "와",
+    "speaker": "",
+    "context": "UI/joiner",
     "note": ""
   }
 ]

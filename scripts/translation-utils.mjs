@@ -30,17 +30,33 @@ export function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-export function toJsEscapedText(value) {
+export function toJsEscapedText(value, quote = '"') {
   const normalized = value.replaceAll("\\n", "\n").replaceAll("\\r", "\r");
-  return normalized
+  let escaped = normalized
     .replaceAll("\\", "\\\\")
     .replaceAll("\n", "\\n")
-    .replaceAll("\r", "\\r")
-    .replaceAll('"', '\\"');
+    .replaceAll("\r", "\\r");
+
+  if (quote) {
+    escaped = escaped.replaceAll(quote, `\\${quote}`);
+  }
+
+  return escaped;
 }
 
 export function jsStringLiteralPattern(source) {
-  return new RegExp(`"${escapeRegExp(toJsEscapedText(source))}"`, "g");
+  const doubleQuoted = `"${escapeRegExp(toJsEscapedText(source, '"'))}"`;
+  const singleQuoted = `'${escapeRegExp(toJsEscapedText(source, "'"))}'`;
+  const templateQuoted = `\`${escapeRegExp(toJsEscapedText(source, "`"))}\``;
+  return new RegExp(`${doubleQuoted}|${singleQuoted}|${templateQuoted}`, "g");
+}
+
+export function isFragmentTranslation(row) {
+  return /\b(fragment|partial)\b/i.test(`${row.context ?? ""} ${row.note ?? ""}`);
+}
+
+export function jsEscapedFragmentPattern(source) {
+  return new RegExp(escapeRegExp(toJsEscapedText(source, "")), "g");
 }
 
 export function mergeTranslationRows(rows) {
@@ -72,6 +88,10 @@ export function replaceJsStringLiterals(input, translations) {
     if (row.source === row.korean) continue;
     output = output.replace(jsStringLiteralPattern(row.source), `"${toJsEscapedText(row.korean)}"`);
   }
+  for (const row of translations) {
+    if (row.source === row.korean || !isFragmentTranslation(row)) continue;
+    output = output.replace(jsEscapedFragmentPattern(row.source), toJsEscapedText(row.korean, ""));
+  }
   return output;
 }
 
@@ -80,6 +100,9 @@ export function countReplaceableJsStringLiterals(input, translations) {
   for (const row of translations) {
     if (row.source === row.korean) continue;
     total += input.match(jsStringLiteralPattern(row.source))?.length ?? 0;
+    if (isFragmentTranslation(row)) {
+      total += input.match(jsEscapedFragmentPattern(row.source))?.length ?? 0;
+    }
   }
   return total;
 }

@@ -59,6 +59,29 @@ test("replaceJsStringLiterals replaces exact JS string literals only", () => {
   assert.equal(output, 'text:"타간", label:"타간과의 대화", other:"非タガン文字"');
 });
 
+test("replaceJsStringLiterals replaces exact static template literals", () => {
+  const input = "const label = `同じ種類のモンスターは連れて行けません`;";
+  const output = replaceJsStringLiterals(input, [
+    {
+      source: "同じ種類のモンスターは連れて行けません",
+      korean: "같은 종류의 몬스터는 데려갈 수 없습니다",
+    },
+  ]);
+  assert.equal(output, 'const label = "같은 종류의 몬스터는 데려갈 수 없습니다";');
+});
+
+test("replaceJsStringLiterals replaces marked fragments inside template literals", () => {
+  const input = "const message = `${name}を手に入れた！`;";
+  const output = replaceJsStringLiterals(input, [
+    {
+      source: "を手に入れた！",
+      korean: "을(를) 손에 넣었다!",
+      note: "suffix fragment",
+    },
+  ]);
+  assert.equal(output, "const message = `${name}을(를) 손에 넣었다!`;");
+});
+
 test("countReplaceableJsStringLiterals ignores no-op translations", () => {
   const input = 'label:"🐞 Debug", text:"タガン"';
   assert.equal(
