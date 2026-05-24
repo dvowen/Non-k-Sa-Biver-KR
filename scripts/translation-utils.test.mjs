@@ -34,6 +34,11 @@ test("jsStringLiteralPattern matches escaped source text", () => {
   assert.match('"안녕\\n하세요"', pattern);
 });
 
+test("jsStringLiteralPattern treats literal TSV newline escapes as JS newlines", () => {
+  const pattern = jsStringLiteralPattern("お？\\n見ない顔だな？");
+  assert.match('"お？\\n見ない顔だな？"', pattern);
+});
+
 test("mergeTranslationRows rejects conflicting translations", () => {
   assert.throws(
     () =>

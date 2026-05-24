@@ -31,7 +31,8 @@ export function escapeRegExp(value) {
 }
 
 export function toJsEscapedText(value) {
-  return value
+  const normalized = value.replaceAll("\\n", "\n").replaceAll("\\r", "\r");
+  return normalized
     .replaceAll("\\", "\\\\")
     .replaceAll("\n", "\\n")
     .replaceAll("\r", "\\r")
