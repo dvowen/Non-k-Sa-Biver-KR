@@ -66,6 +66,24 @@ node scripts/merge-translations.mjs
 node scripts/apply-translations.mjs
 ```
 
+## GitHub Pages Build
+
+For a project page deployed from this repository, build `dist/` with:
+
+```bash
+node scripts/build-github-pages.mjs
+```
+
+The build copies `site/` into `dist/`, rewrites `/202604testtes004v6/...` asset paths to
+`/Non-k-Sa-Biver-KR/202604testtes004v6/...`, and writes `dist/.nojekyll` so GitHub Pages serves
+`_next/` assets correctly. The Pages workflow deploys this `dist/` directory on pushes to `main`.
+
+If the repository name changes, override the project base path:
+
+```bash
+GITHUB_PAGES_BASE=/your-repo-name node scripts/build-github-pages.mjs
+```
+
 ## Asset Download Status
 
 Last download pass:

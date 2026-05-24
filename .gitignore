@@ -4,5 +4,6 @@ Thumbs.db
 .env
 .env.*
 node_modules/
+dist/
 docs/
 .codex/agents/
