@@ -82,6 +82,28 @@ test("replaceJsStringLiterals replaces marked fragments inside template literals
   assert.equal(output, "const message = `${name}을(를) 손에 넣었다!`;");
 });
 
+test("replaceJsStringLiterals replaces fragments across raw template newlines", () => {
+  const input = "const message = `ナイスファイト！\n生存時間: ${minutes}分${seconds}秒\nスコア: ${score}`;";
+  const output = replaceJsStringLiterals(input, [
+    {
+      source: "ナイスファイト！\\n生存時間: ",
+      korean: "잘 싸웠어!\\n생존 시간: ",
+      note: "template fragment",
+    },
+    { source: "分", korean: "분 ", note: "template fragment" },
+    {
+      source: "秒\\nスコア: ",
+      korean: "초\\n점수: ",
+      note: "template fragment",
+    },
+  ]);
+
+  assert.equal(
+    output,
+    "const message = `잘 싸웠어!\n생존 시간: ${minutes}분 ${seconds}초\n점수: ${score}`;",
+  );
+});
+
 test("countReplaceableJsStringLiterals ignores no-op translations", () => {
   const input = 'label:"🐞 Debug", text:"タガン"';
   assert.equal(

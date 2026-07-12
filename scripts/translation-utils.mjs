@@ -59,6 +59,14 @@ export function jsEscapedFragmentPattern(source) {
   return new RegExp(escapeRegExp(toJsEscapedText(source, "")), "g");
 }
 
+function toRawTemplateText(value) {
+  return value.replaceAll("\\n", "\n").replaceAll("\\r", "\r");
+}
+
+export function rawTemplateFragmentPattern(source) {
+  return new RegExp(escapeRegExp(toRawTemplateText(source)), "g");
+}
+
 export function mergeTranslationRows(rows) {
   const merged = new Map();
   for (const row of rows) {
@@ -91,6 +99,7 @@ export function replaceJsStringLiterals(input, translations) {
   for (const row of translations) {
     if (row.source === row.korean || !isFragmentTranslation(row)) continue;
     output = output.replace(jsEscapedFragmentPattern(row.source), toJsEscapedText(row.korean, ""));
+    output = output.replace(rawTemplateFragmentPattern(row.source), toRawTemplateText(row.korean));
   }
   return output;
 }
@@ -101,7 +110,12 @@ export function countReplaceableJsStringLiterals(input, translations) {
     if (row.source === row.korean) continue;
     total += input.match(jsStringLiteralPattern(row.source))?.length ?? 0;
     if (isFragmentTranslation(row)) {
-      total += input.match(jsEscapedFragmentPattern(row.source))?.length ?? 0;
+      const escapedPattern = jsEscapedFragmentPattern(row.source);
+      const rawPattern = rawTemplateFragmentPattern(row.source);
+      total += input.match(escapedPattern)?.length ?? 0;
+      if (rawPattern.source !== escapedPattern.source) {
+        total += input.match(rawPattern)?.length ?? 0;
+      }
     }
   }
   return total;
