@@ -90,9 +90,7 @@ SYSTEM	시스템		UI/system	spec name
 気絶した！	기절했다!		battle/message	
 熱射に倒れた…	열기에 쓰러졌다...		battle/message	
 ナイスファイト！	잘 싸웠어!		battle/message	
-ナイスファイト！\n生存時間: 	잘 싸웠어!\n생존 시간: 		battle/message fragment	v0.7 template fragment
-分	분 		battle/message fragment	v0.7 template fragment
-秒\nスコア: 	초\n점수: 		battle/message fragment	v0.7 template fragment
+ナイスファイト！\n生存時間: ${t}分${e%60}秒\nスコア: ${s}	잘 싸웠어!\n생존 시간: ${t}분 ${e%60}초\n점수: ${s}		battle/message	v0.7 dynamic template
 ボス出現！	보스 출현!		battle/message	
 ⚠️ ボス出現！	⚠️ 보스 출현!		battle/message	
 敵の気配が変わった…！	적의 기척이 달라졌다...!		battle/message	

@@ -22,6 +22,13 @@ test("collectSpecialTokens finds wait tags and placeholders", () => {
   ]);
 });
 
+test("collectSpecialTokens preserves dynamic template expressions", () => {
+  assert.deepEqual(
+    collectSpecialTokens("${minutes}分${seconds}秒"),
+    ["${minutes}", "${seconds}"],
+  );
+});
+
 test("validateTokenPreservation rejects missing source tokens", () => {
   assert.throws(
     () => validateTokenPreservation("金額 {donationAmount}G", "금액 G"),
@@ -101,6 +108,21 @@ test("replaceJsStringLiterals replaces fragments across raw template newlines", 
   assert.equal(
     output,
     "const message = `잘 싸웠어!\n생존 시간: ${minutes}분 ${seconds}초\n점수: ${score}`;",
+  );
+});
+
+test("replaceJsStringLiterals replaces a complete dynamic template literal", () => {
+  const input = "const message = `ナイスファイト！\n生存時間: ${t}分${e%60}秒\nスコア: ${s}`;";
+  const output = replaceJsStringLiterals(input, [
+    {
+      source: "ナイスファイト！\\n生存時間: ${t}分${e%60}秒\\nスコア: ${s}",
+      korean: "잘 싸웠어!\\n생존 시간: ${t}분 ${e%60}초\\n점수: ${s}",
+    },
+  ]);
+
+  assert.equal(
+    output,
+    "const message = `잘 싸웠어!\n생존 시간: ${t}분 ${e%60}초\n점수: ${s}`;",
   );
 });
 

@@ -46,6 +46,8 @@ test("buildGithubPages creates dist with rewritten text assets and root redirect
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "github-pages-build-"));
   const sourceDir = path.join(tempDir, "site");
   const distDir = path.join(tempDir, "dist");
+  await fs.mkdir(path.join(sourceDir, "202604testtes004v6"), { recursive: true });
+  await fs.writeFile(path.join(sourceDir, "202604testtes004v6", "stale.html"), "stale");
   await fs.mkdir(path.join(sourceDir, "202605testtest050v7", "_next", "static"), { recursive: true });
   await fs.writeFile(
     path.join(sourceDir, "202605testtest050v7", "index.html"),
@@ -74,4 +76,5 @@ test("buildGithubPages creates dist with rewritten text assets and root redirect
   );
   assert.match(await fs.readFile(path.join(distDir, "index.html"), "utf8"), /202605testtest050v7\//);
   assert.equal(await fs.readFile(path.join(distDir, ".nojekyll"), "utf8"), "");
+  await assert.rejects(fs.access(path.join(distDir, "202604testtes004v6")));
 });

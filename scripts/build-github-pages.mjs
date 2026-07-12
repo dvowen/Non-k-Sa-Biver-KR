@@ -107,7 +107,11 @@ export async function buildGithubPages({
   const options = { localBasePath, githubPagesBasePath };
   await fs.rm(distDir, { recursive: true, force: true });
   await fs.mkdir(distDir, { recursive: true });
-  await fs.cp(sourceDir, distDir, { recursive: true });
+  await fs.cp(
+    path.join(sourceDir, SITE_VERSION_DIR),
+    path.join(distDir, SITE_VERSION_DIR),
+    { recursive: true },
+  );
   const rewrittenFiles = await rewriteCopiedFiles(distDir, options);
   await writeRootRedirect(distDir);
   await writeNoJekyll(distDir);

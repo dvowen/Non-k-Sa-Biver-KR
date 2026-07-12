@@ -32,6 +32,10 @@ test("captureUpstream follows lazy chunks and mirrors core files", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "capture-upstream-"));
   const rawDir = path.join(tempDir, "raw");
   const siteDir = path.join(tempDir, "site", BASE_PATH.slice(1));
+  await fs.mkdir(path.join(rawDir, "chunks"), { recursive: true });
+  await fs.mkdir(path.join(siteDir, "_next", "static", "chunks"), { recursive: true });
+  await fs.writeFile(path.join(rawDir, "chunks", "stale.js"), "stale");
+  await fs.writeFile(path.join(siteDir, "_next", "static", "chunks", "stale.js"), "stale");
   const bodies = new Map([
     [`${BASE_PATH}/`, `<script src="${BASE_PATH}/_next/static/chunks/entry.js"></script><link rel="icon" href="${BASE_PATH}/favicon.ico">`],
     [`${BASE_PATH}/_next/static/chunks/entry.js`, `const lazy="096a45b60b7c4b91.js";`],
@@ -60,6 +64,8 @@ test("captureUpstream follows lazy chunks and mirrors core files", async () => {
   assert.equal(await fs.readFile(path.join(rawDir, "chunks", "096a45b60b7c4b91.js"), "utf8"), bodies.get(`${BASE_PATH}/_next/static/chunks/096a45b60b7c4b91.js`));
   assert.equal(await fs.readFile(path.join(siteDir, "_next", "static", "chunks", "entry.js"), "utf8"), bodies.get(`${BASE_PATH}/_next/static/chunks/entry.js`));
   assert.equal(await fs.readFile(path.join(siteDir, "favicon.ico"), "utf8"), "icon");
+  await assert.rejects(fs.access(path.join(rawDir, "chunks", "stale.js")));
+  await assert.rejects(fs.access(path.join(siteDir, "_next", "static", "chunks", "stale.js")));
 });
 
 test("captureUpstream rejects a missing core file", async () => {

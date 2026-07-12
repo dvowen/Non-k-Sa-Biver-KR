@@ -78,6 +78,21 @@ async function writeAll(paths, bytes) {
   }
 }
 
+async function resetCoreCapture({ rawDir, siteDir }) {
+  const corePaths = [
+    path.join(rawDir, "chunks"),
+    path.join(rawDir, "css"),
+    path.join(rawDir, "index.html"),
+    path.join(rawDir, "favicon.ico"),
+    path.join(siteDir, "_next", "static", "chunks"),
+    path.join(siteDir, "_next", "static", "media"),
+    path.join(siteDir, "index.html"),
+    path.join(siteDir, "favicon.ico"),
+  ];
+
+  await Promise.all(corePaths.map((corePath) => fs.rm(corePath, { force: true, recursive: true })));
+}
+
 export async function captureUpstream({
   fetchImpl = fetch,
   rawDir = RAW_DIR,
@@ -86,6 +101,7 @@ export async function captureUpstream({
   basePath = UPSTREAM_BASE_PATH,
 } = {}) {
   const base = normalizeBasePath(basePath);
+  await resetCoreCapture({ rawDir, siteDir });
   const queue = [`${base}/`];
   const visited = new Set();
 
@@ -127,4 +143,3 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       process.exitCode = 1;
     });
 }
-

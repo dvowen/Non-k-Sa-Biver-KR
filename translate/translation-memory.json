@@ -714,6 +714,13 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "ナイスファイト！\\n生存時間: ${t}分${e%60}秒\\nスコア: ${s}",
+    "korean": "잘 싸웠어!\\n생존 시간: ${t}분 ${e%60}초\\n점수: ${s}",
+    "speaker": "",
+    "context": "battle/message",
+    "note": "v0.7 dynamic template"
+  },
+  {
     "source": "えっ？[wait:0.5]そうじゃない……？\\nじゃあなんだ、どこか痛むのか？",
     "korean": "뭐?[wait:0.5]그게 아니라고……?\\n그럼 뭐야, 어디 아픈 거냐?",
     "speaker": "アルバルト",
@@ -2772,13 +2779,6 @@
     "note": "extracted partial"
   },
   {
-    "source": "ナイスファイト！\\n生存時間: ",
-    "korean": "잘 싸웠어!\\n생존 시간: ",
-    "speaker": "",
-    "context": "battle/message fragment",
-    "note": "v0.7 template fragment"
-  },
-  {
     "source": "経験値を得られる不思議なオーブ。",
     "korean": "경험치를 얻을 수 있는 신비한 오브.",
     "speaker": "",
@@ -4401,13 +4401,6 @@
     "speaker": "",
     "context": "battle/message",
     "note": ""
-  },
-  {
-    "source": "秒\\nスコア: ",
-    "korean": "초\\n점수: ",
-    "speaker": "",
-    "context": "battle/message fragment",
-    "note": "v0.7 template fragment"
   },
   {
     "source": "⚠️ ボス出現！",
@@ -6312,13 +6305,6 @@
     "speaker": "",
     "context": "UI/location tag",
     "note": ""
-  },
-  {
-    "source": "分",
-    "korean": "분 ",
-    "speaker": "",
-    "context": "battle/message fragment",
-    "note": "v0.7 template fragment"
   },
   {
     "source": "町",
